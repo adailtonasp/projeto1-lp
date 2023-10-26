@@ -58,7 +58,7 @@ O projeto está organizado nos seguintes arquivos:
 
 Integrantes:
 
-[geovana]([link](https://github.com/geovanaw))
+[geovana](https://github.com/geovanaw)
 
 [adailton](https://github.com/adailtonasp)
 
