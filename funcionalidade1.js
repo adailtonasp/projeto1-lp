@@ -1,15 +1,17 @@
 function verificaDia(diaDaSemana, ultimaVisita) {
     let dia = new Date();
-    let mesAtual = dia.getMonth();
-    let mesUltimaVisita = (ultimaVisita.getMonth()) % 12;
 
-    if (mesAtual === mesUltimaVisita) {
+    let intervalo1 = new Date(ultimaVisita.setDate(ultimaVisita.getDate() + 30));
+
+    let intervalo2 = new Date(ultimaVisita.setDate(ultimaVisita.getDate() + 30));
+
+    if (dia >= intervalo1 && dia <= intervalo2) {    
+
         if (diaDaSemana === dia.getDay()) {
-            return (true);
+            return true;
         }
     }
-
-    return (false);
+    return false;
 }
 
 module.exports = {verificaDia:verificaDia};

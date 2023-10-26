@@ -7,7 +7,7 @@ function montarCorpoDoEmail(nomeDoCliente) {
     Como vai? Estamos entrando em contato para infomar as ultimas novidades automotivas na nossa loja!
     Confira agora e não perca oportunidade!
 
-    Carro1 no valor de 40.000R$
+    Carro sedan no valor de 40.000R$
     Entrada de 3.000R$
     + 32 parcelas de 1200R$
 

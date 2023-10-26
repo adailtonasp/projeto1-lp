@@ -13,6 +13,12 @@ const dezembro = 11;
 
 const listaDeClientes = [
     {
+        nome: "Cliente1",
+        aceitaMsg: true,
+        email: "cliente1@mail.com",
+        ultimaVisita: new Date(2023, setembro, 26)
+    },
+    {
         nome: "Alice",
         aceitaMsg: true,
         email: "alice@mail.com",
@@ -32,13 +38,13 @@ const listaDeClientes = [
     },
     {
         nome: "David",
-        aceitaMsg: true,
+        aceitaMsg: false,
         email: "david@mail.com",
         ultimaVisita: new Date(2023, outubro, 12)
     },
     {
         nome: "Eva",
-        aceitaMsg: false,
+        aceitaMsg: true,
         email: "eva@mail.com",
         ultimaVisita: new Date(2023, novembro, 5)
     }

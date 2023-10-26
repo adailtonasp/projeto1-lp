@@ -15,7 +15,7 @@ const diasDaSemana = {
     "sábado": 6
 };
 
-const diaDeEnviarEmails = diasDaSemana["segunda-feira"];
+const diaDeEnviarEmails = diasDaSemana["quinta-feira"]; //mudar pra segunda
 
 const assunto = "Novidades CarStore";
 
@@ -24,14 +24,28 @@ function enviarEmailsParaCliente(cliente) {
         // Funcionalidade 1
         const diaValidoParaEnvio = verificaDia(diaDeEnviarEmails, cliente.ultimaVisita);
 
+        if (!diaValidoParaEnvio) {
+            console.log("Não foi gerado email");
+            return;
+        } 
+        
         // Funcionalidade 2
         const corpoDoEmail = montarCorpoDoEmail(cliente.nome);
 
         // Funcionalidade 3
-        const status = enviarEmailsParaClientes(cliente.email, assunto, corpoDoEmail, diaValidoParaEnvio, cliente.aceitaMsg);
+
+        const emailContent = {
+            "clienteEmail" : cliente.email,
+            "assunto" : assunto,
+            "corpoDoEmail" : corpoDoEmail,
+            "diaDeEnviarEmails" : diaValidoParaEnvio,
+            "clienteAceitaMsg" : cliente.aceitaMsg
+        }
+
+        const status = enviarEmailsParaClientes(emailContent);
 
         // Funcionalidade 4
-        if (status && status.status !== "success") {
+        if (status && status.status !== "Sucess") { //ta escrito errado
             throw new Error(status.message);
         }
     }
