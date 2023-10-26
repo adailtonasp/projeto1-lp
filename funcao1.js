@@ -5,7 +5,7 @@ function verificaDia(ultimaVisita) {
 
     let mesUltimaVisita = ultimaVisita.getMonth();
 
-    const diaDoEnvio = 3; //variavel para guarda o dia de segunda
+    const diaDoEnvio = 2; //variavel para guarda o dia de segunda
 
     if (mesAtual === (mesUltimaVisita + 1) % 12) {
         if (diaDoEnvio === dia.getDay()) {
