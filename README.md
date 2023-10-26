@@ -55,3 +55,14 @@ O projeto está organizado nos seguintes arquivos:
 `funcionalidade3.js`: Envio de Email para Clientes:
 
 `funcionalidade4.js`: Tratamento de Erros ou Sucesso no Envio de Emails:
+
+Integrantes:
+
+[geovana](https://github.com/geovanaw)
+
+[adailton](https://github.com/adailtonasp)
+
+[bruno](https://github.com/BrunoZarth)
+
+[raphael](https://github.com/rapdos-s)
+
