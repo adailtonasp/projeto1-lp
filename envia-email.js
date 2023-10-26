@@ -21,7 +21,7 @@ const enviarEmail = (addressee, subject, body) => {
       message: "O corpo da mensagem precisa ser fornecido ao enviar um e-mail.",
     };
   }
-
+  
   console.log(
     `
       De: news@carstore.com
