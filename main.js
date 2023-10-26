@@ -15,7 +15,7 @@ const diasDaSemana = {
     "sábado": 6
 };
 
-const diaDeEnviarEmails = diasDaSemana["quinta-feira"]; //mudar pra segunda
+const diaDeEnviarEmails = diasDaSemana["segunda-feira"];
 
 const assunto = "Novidades CarStore";
 
@@ -45,7 +45,7 @@ function enviarEmailsParaCliente(cliente) {
         const status = enviarEmailsParaClientes(emailContent);
 
         // Funcionalidade 4
-        if (status && status.status !== "Sucess") { //ta escrito errado
+        if (status && status.status !== "Sucess") {
             throw new Error(status.message);
         }
     }
